@@ -26,7 +26,7 @@ namespace TechJobs.ViewModels
         public int CoreCompetencyID { get; set; }
 
         [Required]
-        [Diplay(Name = "PositionType")]
+        [Display(Name = "PositionType")]
         public int PositionTypeID { get; set; }
 
         public List<SelectListItem> Employers { get; set; } = new List<SelectListItem>();
