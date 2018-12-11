@@ -19,7 +19,9 @@ namespace TechJobs.Controllers
         public IActionResult Index(int id)
         {
             // TODO #1 - get the Job with the given ID and pass it into the view
-            string EmployerName = job.Employer.Value;
+            //string EmployerName = jobData.Employer.Value;
+            //*List<jobData> job = jobData.GetAll();*//
+            List<Job> jobs = jobData.GetAll();
 
             return View();
         }

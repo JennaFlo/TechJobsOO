@@ -1,11 +1,21 @@
-﻿@{
-// TODO #2.1- declare the ViewModel (outside of this @{ } block)
+﻿@model TechJobs.ViewModels.JobFieldsViewModel
+
+<!--*TODO #2.1- declare the ViewModel (outside of this @{ } block)-->
 <h1>@ViewBag.Title</h1>
-}
+
 
 <table class="job-listing">
-    @{ 
-// TODO #2.2 - display the job fields, one per row (outside of this @{ } block)
-    foreach()
+    @{
+        // TODO #2.2 - display the job fields, one per row (outside of this @{ } block)
+        foreach (var jobs in Model)
+        {
+            <tr>
+                <td>@jobs.Name</td>
+                <td>@jobs.Employer</td>
+                <td>@jobs.Location</td>
+                <td>@jobs.CoreCompetency</td>
+                <td>@jobs.PositionType</td>
+            </tr>
+        }
     }
 </table>
